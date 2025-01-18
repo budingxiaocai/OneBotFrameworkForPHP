@@ -1,0 +1,100 @@
+<?php
+    /**
+    * OneBotForPHP
+    * 基于OneBot协议的QQ机器人开发框架
+    * @author BudingXiaoCai <budingxiaocai@outlook.com>
+    * @version 1.0.4
+    * @license MIT
+    */
+
+    /**
+     * 处理QQ机器人的逻辑
+     */
+    class QQEvents {
+        /** 
+         * 当Bot接收消息时执行的函数
+         * + https://docs.go-cqhttp.org/event/#%E2%86%93-%E8%AF%B7%E6%B1%82%E4%B8%8A%E6%8A%A5-%E2%86%93
+         * @param string $postType 事件类型
+         * @param array $message 消息内容，包含文本和CQ码，具体请看：https://docs.go-cqhttp.org/reference/#%E6%B6%88%E6%81%AF
+         * @param string $rawMessage 原始消息内容(包含CQ码)
+         * @param string $messageType 消息类型, private为私聊消息，group为群消息
+         * @param string $subType 消息子类型, friend好友，normal群聊，anonymous匿名，group_self群中自身发送，group群临时会话，notice系统提示
+         * @param int $messageId 消息ID
+         * @param int $userId 表示发送者UserID
+         * @param array $rawData OneBot服务器发送过来的原始数据
+         * @param array $sender 发送者的部分详细信息
+         * + 如果是私聊，则$sender包含:
+         *  - int user_id发送者ID
+         *  - string nickname 发送者昵称
+         *  - string sex 发送者性别, male或female或unknown
+         *  - int age 发送者年龄
+         * + 如果是群聊则同时包含:
+         *  - string card 群名片／备注
+         *  - string role 群内角色, owner或admin或member
+         *  - string area 地区
+         *  - string level 成员等级
+         *  - string role 群内角色, owner或admin或member
+         *  - string title 群头衔
+         * + 当私聊类型为群临时会话时包含:
+         *  - int group_id 临时群消息来源群号
+         * @param QQAction $action 用于向OneBot服务器发送数据的对象
+         * @param int $groupId消息来源群号，仅在消息类型为群消息时有效
+         * @return void
+         */
+        public static function onMessage(
+            string $postType,
+            array $message,
+            string $rawMessage,
+            string $messageType,
+            string $subType,
+            int $messageId,
+            int $userId,
+            array $rawData,
+            array $sender,
+            QQAction $action,
+            int $groupId = 0
+        ) {
+            // TODO: Bot的消息处理逻辑
+        }
+
+        /**
+         * 当Bot接收到通知事件时执行的函数
+         * + https://docs.go-cqhttp.org/event/#%E2%86%93-%E9%80%9A%E7%9F%A5%E4%B8%8A%E6%8A%A5-%E2%86%93
+         * @param string $postType 事件类型
+         * @param string $noticeType 通知类型
+         * @param array $rawData OneBot服务器发送过来的原始数据
+         * @param QQAction $action 用于向OneBot服务器发送数据的对象
+         * @return void
+         */
+        public static function onNotice(
+            string $postType,
+            string $noticeType,
+            array $rawData,
+            QQAction $action
+        ) {
+            // TODO: Bot的通知处理逻辑
+        }
+
+        /**
+         * 当Bot接收到请求事件时执行的函数
+         * @param string $postType 事件类型
+         * @param string $requestType 请求类型
+         * @param int $userId 发送请求的QQ号
+         * @param string $comment 请求消息
+         * @param string $flag 请求flag，调用set_group_add_request或set_friend_add_request时会使用此参数
+         * @param array $rawData OneBot服务器发送过来的原始数据
+         * @param QQAction $action 用于向OneBot服务器发送数据的对象
+         * @return void
+         */
+        public static function onRequest(
+            string $postType,
+            string $requestType,
+            int $userId,
+            string $comment,
+            string $flag,
+            array $rawData,
+            QQAction $action
+        ) {
+            // TODO: Bot的请求处理逻辑
+        }
+    }

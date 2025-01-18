@@ -1,0 +1,279 @@
+2024-12-15 09:53:24 pid:1 Error: Undefined constant "Self" in H:\GatewayWorker\GatewayWorker\main\Events.php:101
+Stack trace:
+#0 H:\GatewayWorker\GatewayWorker\main\controller\n2.controller.php(6): Operate::sendToHe()
+#1 [internal function]: app\chats\n2\Index::onConnect()
+#2 H:\GatewayWorker\GatewayWorker\main\Events.php(52): ReflectionMethod->invoke()
+#3 [internal function]: Events::onWebSocketConnect()
+#4 H:\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(396): call_user_func()
+#5 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#6 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#7 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#8 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#9 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#10 H:\GatewayWorker\GatewayWorker\main\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2024-12-15 10:19:25 pid:1 Error: Call to undefined method Operate::sendTo5() in H:\GatewayWorker\GatewayWorker\main\controller\n2.controller.php:12
+Stack trace:
+#0 [internal function]: app\chats\n2\Index::onMessage()
+#1 H:\GatewayWorker\GatewayWorker\main\Events.php(75): ReflectionMethod->invoke()
+#2 [internal function]: Events::onMessage()
+#3 H:\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#4 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#5 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#6 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#7 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#8 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#9 H:\GatewayWorker\GatewayWorker\main\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2024-12-15 10:19:29 pid:1 TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "Gateway" not found in H:\GatewayWorker\GatewayWorker\main\Events.php:111
+Stack trace:
+#0 H:\GatewayWorker\GatewayWorker\main\controller\Index.controller.php(12): Operate::__callstatic()
+#1 [internal function]: app\chats\Index::onMessage()
+#2 H:\GatewayWorker\GatewayWorker\main\Events.php(75): ReflectionMethod->invoke()
+#3 [internal function]: Events::onMessage()
+#4 H:\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#5 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#6 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#7 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#8 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#9 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#10 H:\GatewayWorker\GatewayWorker\main\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2024-12-15 10:19:55 pid:1 TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "Gateway" not found in H:\GatewayWorker\GatewayWorker\main\Events.php:111
+Stack trace:
+#0 H:\GatewayWorker\GatewayWorker\main\controller\Index.controller.php(12): Operate::__callstatic()
+#1 [internal function]: app\chats\Index::onMessage()
+#2 H:\GatewayWorker\GatewayWorker\main\Events.php(75): ReflectionMethod->invoke()
+#3 [internal function]: Events::onMessage()
+#4 H:\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#5 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#6 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#7 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#8 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#9 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#10 H:\GatewayWorker\GatewayWorker\main\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2024-12-15 10:20:38 pid:1 TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "Gateway" not found in H:\GatewayWorker\GatewayWorker\main\Events.php:111
+Stack trace:
+#0 H:\GatewayWorker\GatewayWorker\main\controller\Index.controller.php(12): Operate::__callstatic()
+#1 [internal function]: app\chats\Index::onMessage()
+#2 H:\GatewayWorker\GatewayWorker\main\Events.php(75): ReflectionMethod->invoke()
+#3 [internal function]: Events::onMessage()
+#4 H:\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#5 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#6 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#7 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#8 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#9 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#10 H:\GatewayWorker\GatewayWorker\main\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2024-12-15 10:21:24 pid:1 TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "Gateway" not found in H:\GatewayWorker\GatewayWorker\main\Events.php:111
+Stack trace:
+#0 H:\GatewayWorker\GatewayWorker\main\controller\Index.controller.php(12): Operate::__callstatic()
+#1 [internal function]: app\chats\Index::onMessage()
+#2 H:\GatewayWorker\GatewayWorker\main\Events.php(75): ReflectionMethod->invoke()
+#3 [internal function]: Events::onMessage()
+#4 H:\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#5 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#6 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#7 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#8 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#9 H:\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#10 H:\GatewayWorker\GatewayWorker\main\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2025-01-17 07:20:37 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 38 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(38): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:20:49 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 38 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(38): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:20:55 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 38 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(38): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:21:48 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 38 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(38): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:23:42 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 38 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(38): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:23:55 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 38 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(38): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:24:38 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:24:55 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:25:25 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:26:05 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:26:16 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:26:25 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:27:55 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:27:56 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2025-01-17 07:27:56 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2025-01-17 07:28:00 pid:1 TypeError: QQEvents::onMessage(): Argument #2 ($message) must be of type array, null given, called in H:\杂\QQBot\app\app\Events.php on line 39 and defined in H:\杂\QQBot\app\app\QQEvents.php:3
+Stack trace:
+#0 H:\杂\QQBot\app\app\Events.php(39): QQEvents::onMessage()
+#1 [internal function]: Events::onMessage()
+#2 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#3 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#8 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2025-01-17 07:30:25 pid:1 Error: Access to undeclared static property Events::$pendingActions in H:\杂\QQBot\app\app\Events.php:130
+Stack trace:
+#0 H:\杂\QQBot\app\app\QQEvents.php(17): QQAction->__call()
+#1 H:\杂\QQBot\app\app\Events.php(40): QQEvents::onMessage()
+#2 [internal function]: Events::onMessage()
+#3 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#8 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#9 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2025-01-17 07:36:51 pid:1 Error: Call to undefined function ran() in H:\杂\QQBot\app\app\Events.php:124
+Stack trace:
+#0 H:\杂\QQBot\app\app\QQEvents.php(17): QQAction->__call()
+#1 H:\杂\QQBot\app\app\Events.php(40): QQEvents::onMessage()
+#2 [internal function]: Events::onMessage()
+#3 H:\杂\QQBot\app\vendor\workerman\gateway-worker\src\BusinessWorker.php(385): call_user_func()
+#4 H:\杂\QQBot\app\vendor\workerman\workerman\Connection\TcpConnection.php(653): GatewayWorker\BusinessWorker->onGatewayMessage()
+#5 H:\杂\QQBot\app\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#6 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1569): Workerman\Events\Select->loop()
+#7 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker::forkWorkersForWindows()
+#8 H:\杂\QQBot\app\vendor\workerman\workerman\Worker.php(561): Workerman\Worker::forkWorkers()
+#9 H:\杂\QQBot\app\app\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
