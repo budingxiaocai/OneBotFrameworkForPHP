@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="LICENSE">
   </a>
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux-red.svg" alt="platform">
-  <a href="https://www.youxiaohou.com" title="点击访问">
+  <a href="https://github.com/budingxiaocai" title="点击访问">
     <img src="https://img.shields.io/badge/Author-%E5%B8%83%E4%B8%81%E5%B0%8F%E6%89%8D-blue.svg">
   </a>
 </p>
