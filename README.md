@@ -20,14 +20,25 @@
 </center><br>
 
 ## 💽 安装方式
-**1.** 下载 [Release](https://github.com/budingxiaocai/releases/latest) 里的OneBotFrameworkForPHP.phar文件运行
-
-**2.** 直接下载对应系统的二进制文件运行即可
-
-**3.** 下载源码并运行 \_\_init\_\_.php
+下载 [Release](https://github.com/budingxiaocai/releases/latest) 里的OneBotFrameworkForPHP.phar文件运行即可
 
 ## 🎨 使用方法
-#### 以NapCat为例
+第一次运行会自动在运行目录创建app/QQEvents.php文件，根据文件中的注释及OneBot的文档自行更改业务逻辑即可食用
+
+[Go-CqHttp文档](https://docs.go-cqhttp.org)
+
+[OneBotFrameworkForPHP文档](https://github.com/budingxiaocai/OneBotFrameworkForPHP/wiki)
+##### 命令行用法：
+```
+  php OneBotFrameworkForPHP.phar [options]
+  -p, --port <number>         设置服务器运行的端口号，默认为6880
+  -d, --run-dir <path>        设置服务器运行的目录，默认为当前目录
+  --disableFileMonitor <1|0>  禁用文件监控功能，默认为启用
+  -h, --help                  显示帮助信息
+```
+
+#### 绑定OneBot服务器
+##### 以NapCat为例
 
 **1.** 打开NapCat的WebUi
 ![image](https://github.com/user-attachments/assets/8e34410e-a6fc-4d13-98e7-febd30e42d17)
