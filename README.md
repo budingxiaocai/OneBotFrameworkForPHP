@@ -43,17 +43,14 @@
 **1.** 打开NapCat的WebUi
 ![image](https://github.com/user-attachments/assets/8e34410e-a6fc-4d13-98e7-febd30e42d17)
 
-**2.** 打开《网络配置》一栏，点击《添加配置》按钮
+**2.** 打开"网络配置"一栏，点击"添加配置"按钮
 
-**3.** 填写名称（随意），类型选择WebSocket客户端（websocketClients），打开《启用》开关，URL填写：ws://框架所在设备的IP地址:框架端口（默认为6880），消息格式选Array，其余默认
+**3.** 填写名称（随意），类型选择WebSocket客户端（websocketClients），打开"启用"开关，URL填写：ws://框架所在设备的IP地址:框架端口（默认为6880），消息格式选Array，其余默认
 ![image](https://github.com/user-attachments/assets/a3ce64ce-67b2-4a47-b8d0-b3281f6e992b)
 
-**4.** 点击《添加》按钮，完成！
+**4.** 点击"添加"按钮，完成！
+##### 其他服务器请根据其对应的文档进行操作
 
-
-## 📝 更新日志
-
-**v1.0.4** **打包版本10040** 首次发布的版本
 ## 🐞 Bug 反馈
 
 如果您在使用过程中遇到问题，请 [发起issues](https://github.com/budingxiaocai/OneBotFrameworkForPHP/issues) 进行反馈。
