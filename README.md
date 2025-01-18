@@ -20,7 +20,7 @@
 </center><br>
 
 ## 💽 安装方式
-下载 [Release](https://github.com/budingxiaocai/releases) 里的OneBotFrameworkForPHP.phar文件运行即可
+下载 [Release](https://github.com/budingxiaocai/OneBotFrameworkForPHP/releases/latest) 里的OneBotFrameworkForPHP.phar文件运行即可
 
 ## 🎨 使用方法
 第一次运行会自动在运行目录创建app/QQEvents.php文件，根据文件中的注释及OneBot的文档自行更改业务逻辑即可食用
