@@ -1,5 +1,29 @@
 {
+    "name": "budingxiaocai/OneBotFrameworkForPHP",
+    "type": "project",
+    "keywords": [
+        "qq",
+        "qqnt",
+        "onebot",
+        "qqbot"
+    ],
+    "license": "MIT",
+    "description": "OneBot development framework based on PHP.",
+    "authors": [
+        {
+            "name": "budingxiaocai",
+            "email": "budingxiaocai@yeah.net",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "budingxiaocai@yeah.net",
+        "issues": "https://github.com/budingxiaocai/OneBotFrameworkForPHP/issues",
+        "source": "https://github.com/budingxiaocai/OneBotFrameworkForPHP"
+    },
     "require": {
+        "php": ">=8.0",
         "workerman/gateway-worker": "^3.1"
-    }
+    },
+    "minimum-stability": "stable"
 }
