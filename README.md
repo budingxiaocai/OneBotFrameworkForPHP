@@ -16,6 +16,7 @@
   <strong>👉 基于PHP的OneBot开发框架 👈</strong><br>
   <sub>适用于 Linux，macOS，Windows 等平台，只要是PHP支持的平台都可以运行</sub><br/>
   <sub>基于<a href="https://github.com/walkor/GatewayWorker">GatewayWorker</a>打造</sub>
+  <sub>此仓库已废弃，请前往</sub><a href="https://github.com/TianjiuApp/hionebot">HiOneBot仓库</a><br/>
 </div>
 </center><br>
 
